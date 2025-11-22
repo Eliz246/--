@@ -1,0 +1,34 @@
+@import '../variables.scss';
+.baner{
+    padding-top: 60px;
+    padding-bottom: 82px;
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__img{
+        &-hag{
+            margin-bottom: 15px;
+        }
+        &-chat{
+            display: flex;
+            justify-self: end;
+        }
+    }
+    &__h1{
+        letter-spacing: 1px;
+        font-weight: 800;
+        color: $accent;
+        font-size: 44px;
+        margin-bottom: 10px;
+        margin-top:20px ;
+    }
+    &__h4{
+        margin-top: 0px;
+        padding-left: 30px;
+        font-size: 20px;
+    }
+    &__btn{
+        margin-bottom: 50px;
+    }
+}

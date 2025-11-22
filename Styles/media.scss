@@ -1,0 +1,185 @@
+@import './variables.scss';
+@media (max-width:1000px){
+    .btn-invers{
+        display: none;
+    }
+    .header{
+        &-wrapper{
+            grid-template-columns: auto auto;
+        }
+        &-menu{
+            position:fixed;
+            top:0;
+            right: -100%;
+            height: 100vh;
+            width: 30%;
+            background: white;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+            transition: right 0.5s ease;
+            z-index: 1200;
+            &__item{
+                &:last-child{
+                    display: inline;
+                }
+            }
+        }
+    }
+    .burger{
+        display: flex;
+        align-self: center;
+        justify-self: end;
+        cursor: pointer;
+        z-index: 1300;
+    }
+}
+@media(max-width:1125px){
+    .steps{
+        &-wrapper{
+            gap:100px;
+        }
+        &__img{
+            width: 458px;
+            height: auto;
+        }
+    }
+}
+@media(max-width:1024px){
+    .text{
+        font-size: 16px;
+    }
+    .h2{
+        font-size: 36px;
+    }
+    .h3{
+        font-size: 20px;
+    }
+    .h4{
+        font-size: 18px;
+        &-regular{
+            font-size: 18px;
+        }
+    }
+    .advantages{
+        &__underline {
+            width: 300px;
+            left: 28.5em;
+        }
+    }
+    .steps{
+        &-wrapper{
+            gap:80px;
+        }
+        &__img{
+            width: 400px;
+        }
+       &__box{
+            &-numb{
+               width: 70px;
+               margin-right: 30px; 
+            }
+            &-calendar{
+                padding: 0;
+            }
+       }
+    }
+    .app{
+        &-wrapper{
+            gap:0;
+        }
+    }
+}
+@media(max-width:960px){
+    .baner{
+        &__img{
+            &-hag{
+                width: 500px;
+            }
+        }
+    }
+    .app{
+        &__img{
+            width: 350px;
+        }
+    }
+    .footer{
+        &-wrapper{
+            grid-template-rows: repeat(2,auto);
+            grid-template-columns: repeat(3,1fr);
+            grid-template-areas: 
+            "socnet start end"
+            "mail doc ."
+            ;
+
+        }
+        &__socnet{
+            grid-area: socnet;
+        }
+        &__menu{
+            &--start{
+                grid-area: start;
+            }
+            &--end{
+                grid-area: end;
+            }
+        }
+        &__doc{
+            grid-area: doc;
+        }
+        &__mail{
+            grid-area: mail;
+        }
+    }
+}
+@media(max-width:900px){
+    .advant{
+        &-wrapper{
+            grid-template-columns: 1fr;
+            row-gap: 50px;
+            
+        }
+        &__item{
+            justify-self: center;
+            &-img{
+                width: 200px;
+                max-height: 200px;
+                }
+        }
+    }
+    .steps{
+        &-wrapper{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(3,auto);
+        }
+        &__box{
+            background-size: 200px;
+        }
+        &__img{
+            display: none;
+        }
+    }
+    .btn--steps-box{
+        width: 350px;
+    }
+}
+@media(max-width:880px){
+    .baner{
+        &-wrapper{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &-info{
+            text-align: center;
+        }
+    }
+    .h2__baner{
+        text-align: center;
+    }
+    .app{
+        &-wrapper{
+            flex-wrap: wrap;
+        }
+    }
+}

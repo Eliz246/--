@@ -1,0 +1,24 @@
+.app{
+    padding-bottom: 255px;
+    &-wrapper{
+        display: flex;
+        gap:70px;
+        margin-bottom: 55px;
+        justify-content: space-between;
+    }
+    &__info{
+        &-box{
+            display: flex;
+            max-width: 100%;
+            width: 520px;
+            margin-bottom: 45px;
+            &-img{
+                margin-right: 30px;
+            }
+        }
+    }
+    &__img{
+        position: relative;
+        bottom: 15px;
+    }
+}

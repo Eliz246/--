@@ -1,0 +1,35 @@
+@import '../variables.scss';
+.steps{
+    padding-bottom: 240px;
+    &-wrapper{
+        display: grid;
+        grid-template-columns: min-content auto;
+        grid-template-rows: repeat(5,auto);
+        gap:150px
+    }
+    &__box{
+        background: url(../../images/blob.svg) no-repeat 30px;
+        display: flex;
+        align-items: center;
+        &-numb{
+            max-width: 100%;
+            height: auto;
+            width: 89px;
+            margin-right: 55px;
+        }
+        &-calendar{
+            background: url(../../images/blobmin.svg) no-repeat 30px;
+            display: flex;
+            align-items: center;
+            padding-right: 60px;
+            &-img{
+                margin-right: 20px;
+            }
+        }
+    }
+    &__img{
+        &--end{
+            justify-self: end;
+        }
+    }
+}

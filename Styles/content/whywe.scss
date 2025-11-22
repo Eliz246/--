@@ -1,0 +1,50 @@
+@import '../variables.scss';
+.whywe{
+    padding-bottom: 290px;
+    &__h2{
+        margin-bottom: 80px;
+    }   
+}
+.advant{
+    &-wrapper{
+        display: grid;
+        column-gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__item{
+        display: flex;
+        position:relative;
+        justify-content: center;
+        max-width: 380px;
+    }
+    &__item{
+        &-box{
+            position: relative;
+            top: 120px;
+            padding: 90px 30px 30px;
+            border-radius: 20px;
+            background-color: $light-accent;
+            text-align: center;
+            align-self: start;
+            &-h4{
+                letter-spacing: 0.7px;
+                font-weight: 600;
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            &-text{
+                font-weight: 400;
+                font-size: 18px;
+            }
+            &--othpad{
+                padding: 90px 60px 30px;
+            }
+        }
+        &-img{
+            position:absolute;
+            z-index: 2;
+            width: 220px;
+            height: 220px;
+        }
+    }
+}

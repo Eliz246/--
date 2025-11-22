@@ -1,0 +1,73 @@
+@import '../variables.scss';
+.header{
+    padding-top: 70px;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+    background-color: #F9FCFF;
+    box-shadow: 0 5px 10px rgba(0,0, 0, 0);
+    transition: all 0.3s ease;
+    &.scrolled{
+        box-shadow: 0 5px 10px rgba(0,0, 0, 0.5);
+        padding: 30px 0px;
+    }
+    &-wrapper{
+        display: grid;
+        grid-template-columns: 310px auto 330px;
+    }
+    &-menu{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        font-weight: 600;
+        padding: 0px;
+        z-index: 10;
+        &.open{
+            right: 0;
+            margin:0;
+        }
+        &__item{
+            &-link{
+                text-decoration: none;
+                color:$text-color;
+                transition: font-weight 0.2s ease, color 0.2s ease;
+                &:hover{
+                    font-weight: 700;
+                    color:$accent;
+                }
+            }
+            &:last-child{
+                display: none;
+            }
+        }
+    }
+}
+.btn-invers{
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+    border:2px solid $accent;
+    border-radius: 15px;
+    color:$accent;
+    max-width: 240px;
+    width: 240px;
+    height: 50px;
+    background-color: $back-color;
+    font-size: 16px;
+    justify-self: end;
+    font-weight: 600; 
+    transition: background-color 0.2s ease;
+    &:hover{
+        background-color: rgba($text-color, 0.25);
+    } 
+    &:active{
+        background-color: $accent;
+        color: $back-color;
+    }  
+}
+.burger{
+    display: none;
+    &.active{
+        content:url(../../images/cross.svg);
+    }
+}

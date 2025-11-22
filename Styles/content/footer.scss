@@ -1,0 +1,60 @@
+@import '../variables.scss';
+.footer{
+    padding-bottom: 55px;
+    &-wrapper{
+        display: grid;
+        grid-template-columns: 190px 160px 140px 150px 260px;
+        justify-content: space-between;
+    }
+    &__socnet{
+        &-link{
+            &-item{
+                margin-right: 25px;
+            }
+        }
+        &-logo{
+            margin-bottom: 35px;
+        }
+    }
+    &__min-text{
+        font-size: 14px;
+        color:$text-color;
+        margin:0px;
+    }
+    &__menu{
+        list-style-type: none;
+        padding: 0px;
+        margin:0px;
+        &-item{
+            font-weight: 600;
+            margin-bottom: 27px;
+            &-link{
+                text-decoration: none;
+                color:$accent;
+                font-size: 18px;
+            }
+        }
+    }
+    &__doc{
+        list-style-type: none;
+        margin:0px;
+        padding: 0px;
+        &-item{
+            margin-bottom: 20px;
+        }
+    }
+    &__mail{
+        &-item{
+            margin-bottom: 23px;
+        }
+        &-text{
+            margin-bottom: 10px;
+        }
+        &-link{
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            color:$accent;
+        }
+    }
+}

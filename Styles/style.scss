@@ -1,0 +1,155 @@
+@import './variables.scss';
+body{
+    margin: 0px;
+    font-family: 'Montserrat';
+    color: $text-color;
+    &.lock{
+        overflow: hidden;
+    }
+}
+.container{
+    margin:0px auto;
+    max-width: 1180px;
+}
+.text{
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+    &--app{
+        margin: 0px;
+        letter-spacing: 0.2px;
+    }
+}
+.h2{
+    line-height: 1.3;
+    letter-spacing: 0.7px;
+    font-weight: 800;
+    font-size: 40px;
+    color: $accent;
+    text-align: center;
+    margin: 0px;
+    &__baner{
+        letter-spacing: 0px;
+        color:$text-color;
+        line-height: 1.4;
+        margin: 0px 0px 80px 0px;
+        text-align: start;
+    }
+    &--left{
+        text-align: left;
+    }
+    &__steps{
+        margin-bottom: 80px;
+    }
+    &--question-marg{
+        margin-bottom: 60px;
+    }
+    &--app{
+        margin-bottom: 35px;
+    }
+    &--tel{
+        margin-bottom: 15px;
+    }
+}
+.h3{
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px;
+    &--marg-b10{
+        margin-bottom: 10px;
+    }
+    &--marg-b15{
+        margin-bottom: 15px;
+    }
+}
+.h4{
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 1.4;
+    &-regular{
+        font-size: 20px;
+        letter-spacing: 0.2px;
+        line-height: 1.4;
+        font-weight: 400;
+        margin: 0px;
+        &--tel{
+            padding-right: 210px;
+            margin-bottom: 50px;
+        }
+        &--marg{
+            margin-top: 10px;
+            margin-bottom: 60px;
+        }
+        &--marg-b10{
+            margin-bottom: 10px;
+        }
+    }
+    &--let-sp-no{
+        letter-spacing: 0px;
+        margin-bottom: 15px;
+    }
+    &--app{
+        margin-bottom: 50px;
+    }
+}
+.btn{
+    font-family: 'Montserrat';
+    letter-spacing: 0.4px;
+    color:$back-color;
+    background-color: $accent;
+    font-weight: 700;
+    font-size: 20px;
+    border-color: $accent;
+    border-radius: 15px;
+    max-width: 420px;
+    width: 380px;
+    height: 70px;
+    box-shadow: 10px 15px $light-accent;
+    transition: box-shadow 0.2s ease;
+    &:hover{
+        box-shadow: 5px 5px $light-accent;
+    }
+    &:active{
+        box-shadow: none;
+    }
+    &--steps-box{
+        justify-self: end;
+        width: 410px;
+    }
+    &--center{
+        display: flex;
+        justify-self: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@keyframes scroll-left{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform:translateX(-50%);
+    }
+}
+@keyframes scroll-right{
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform:translateX(0);
+    }
+}
+@import './content/header.scss';
+@import './content/baner.scss';
+@import './content/whywe.scss';
+@import './content/condition.scss';
+@import './content/advantages.scss';
+@import './content/steps.scss';
+@import './content/question.scss';
+@import './content/app.scss';
+@import './content/telephone.scss';
+@import './content/footer.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+@import './media.scss';

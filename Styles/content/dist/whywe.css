@@ -1,0 +1,42 @@
+.whywe {
+  padding-bottom: 265px;
+}
+.whywe__h2 {
+  margin-bottom: 80px;
+}
+
+.advant-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.advant__item {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  max-width: 380px;
+}
+.advant__item-box {
+  position: relative;
+  z-index: -1;
+  top: 120px;
+  padding: 90px 40px 30px;
+  border-radius: 20px;
+  background-color: #EBF5FF;
+  text-align: center;
+  align-self: start;
+}
+.advant__item-box-h4 {
+  font-weight: 600;
+  font-size: 24px;
+  white-space: nowrap;
+}
+.advant__item-box-text {
+  font-weight: 400;
+  font-size: 18px;
+}
+.advant__item-box--othpad {
+  padding: 100px 60px 30px;
+}
+.advant__item-img {
+  position: absolute;
+}

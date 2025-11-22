@@ -1,0 +1,38 @@
+@import '../variables.scss';
+.question{
+    padding-bottom: 200px;
+    &__item{
+        background-color: $light-accent;
+        border-radius: 25px;
+        margin-bottom: 30px;
+        padding: 6px 100px 15px;
+        &-head{
+            background: url(../../images/plus.svg) no-repeat;
+            background-position: right top 65%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 200px;
+            cursor:pointer;
+            height: max-content;
+        }
+        &--pd-oth{
+            padding: 9px 100px 21px;
+        }
+        &-cont{
+            font-size: 18px;
+            padding-right: 300px;
+            letter-spacing: 0.2px;
+            line-height: 1.5;
+        }
+        &[open] .question__item-head{
+            background: url(../../images/minus.svg) no-repeat;
+            background-position: right top 65%;
+        }
+        &[open]{
+            padding-bottom: 30px;
+        }
+       
+    }
+
+}

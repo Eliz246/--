@@ -1,0 +1,48 @@
+@import '../variables.scss';
+.advantages{
+    padding-bottom: 195px;
+    &__underline{
+        position: relative;
+        left: 32em;
+    }
+    &__wrapper{
+        display:grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2,auto);
+        gap:30px;
+    }
+    &__box{
+        background-color: $light-accent;
+        border-radius: 20px;
+        padding: 42px 90px 42px 100px;
+        &-text{
+            align-self: center;
+        }
+        &-img{
+            max-width: 150px;
+            max-height: 150px;
+            margin-right: 50px;
+        }
+        &-one{
+            grid-column: 8/-1;
+            grid-row: 1;
+        }
+        &-two{
+            grid-column: 1/6;
+            grid-row: 2;
+        }
+        &-wthimg{
+            padding: 20px 50px 20px 30px;
+            &-one{
+                grid-column: 1/8;
+                grid-row: 1;
+                display: flex;
+            }
+            &-two{
+                grid-column: 6/-1;
+                grid-row: 2;
+                display: flex;
+            }
+        }
+    }
+}
