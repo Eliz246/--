@@ -41,6 +41,7 @@ body.lock {
 }
 .h2--left {
   text-align: left;
+  width: 80%;
 }
 .h2__steps {
   margin-bottom: 80px;
@@ -596,38 +597,9 @@ body.lock {
   color: #7872B9;
 }
 
-@media (max-width: 1000px) {
-  .btn-invers {
-    display: none;
-  }
-
-  .header-wrapper {
-    grid-template-columns: 310px auto;
-  }
-  .header-menu {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    height: 100vh;
-    width: 30%;
-    background: white;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
-    transition: right 0.5s ease;
-    z-index: 1200;
-  }
-  .header-menu__item:last-child {
-    display: inline;
-  }
-
-  .burger {
-    display: flex;
-    align-self: center;
-    justify-self: end;
-    cursor: pointer;
-    z-index: 1300;
+@media (max-width: 1131px) {
+  .advantages__underline {
+    left: 0em;
   }
 }
 @media (max-width: 1125px) {
@@ -637,6 +609,11 @@ body.lock {
   .steps__img {
     width: 458px;
     height: auto;
+  }
+}
+@media (max-width: 1096px) {
+  .advantages__underline {
+    left: 7em;
   }
 }
 @media (max-width: 1024px) {
@@ -682,6 +659,50 @@ body.lock {
     gap: 0;
   }
 }
+@media (max-width: 1020px) {
+  .advantages__underline {
+    left: 0em;
+  }
+}
+@media (max-width: 1000px) {
+  .btn-invers {
+    display: none;
+  }
+
+  .header-wrapper {
+    grid-template-columns: auto auto;
+  }
+  .header-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 30%;
+    background: white;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
+    transition: right 0.5s ease;
+    z-index: 1200;
+  }
+  .header-menu__item:last-child {
+    display: inline;
+  }
+
+  .burger {
+    display: flex;
+    align-self: center;
+    justify-self: end;
+    cursor: pointer;
+    z-index: 1300;
+  }
+}
+@media (max-width: 988px) {
+  .advantages__underline {
+    left: 6em;
+  }
+}
 @media (max-width: 960px) {
   .baner__img-hag {
     width: 500px;
@@ -695,6 +716,7 @@ body.lock {
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "socnet start end" "mail doc .";
+    row-gap: 20px;
   }
   .footer__socnet {
     grid-area: socnet;
@@ -755,5 +777,18 @@ body.lock {
 
   .app-wrapper {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 869px) {
+  .advantages__underline {
+    left: 17em;
+  }
+}
+@media (max-width: 800px) {
+  .telephone__img {
+    width: 200px;
+  }
+  .telephone__info {
+    padding: 35px 130px 72px 65px;
   }
 }
