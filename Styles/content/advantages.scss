@@ -5,7 +5,7 @@
         position: relative;
         left: 32em;
     }
-    &__wrapper{
+    &-wrapper{
         display:grid;
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: repeat(2,auto);

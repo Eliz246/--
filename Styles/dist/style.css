@@ -387,7 +387,7 @@ body.lock {
   position: relative;
   left: 32em;
 }
-.advantages__wrapper {
+.advantages-wrapper {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2, auto);
@@ -405,6 +405,7 @@ body.lock {
   max-width: 150px;
   max-height: 150px;
   margin-right: 50px;
+  align-self: center;
 }
 .advantages__box-one {
   grid-column: 8/-1;
@@ -602,18 +603,27 @@ body.lock {
     left: 0em;
   }
 }
+@media (max-width: 1180px) {
+  .header {
+    padding-top: 30px;
+  }
+}
 @media (max-width: 1125px) {
   .steps-wrapper {
     gap: 100px;
   }
   .steps__img {
-    width: 458px;
+    width: 400px;
     height: auto;
   }
 }
 @media (max-width: 1096px) {
   .advantages__underline {
     left: 7em;
+  }
+
+  .header-wrapper {
+    grid-template-columns: 310px repeat(2, auto);
   }
 }
 @media (max-width: 1024px) {
@@ -634,6 +644,14 @@ body.lock {
   }
   .h4-regular {
     font-size: 18px;
+  }
+
+  .btn {
+    font-size: 18px;
+  }
+
+  .baner__h1 {
+    font-size: 40px;
   }
 
   .advantages__underline {
@@ -737,10 +755,16 @@ body.lock {
 @media (max-width: 900px) {
   .advant-wrapper {
     grid-template-columns: 1fr;
-    row-gap: 50px;
+    row-gap: 120px;
   }
   .advant__item {
     justify-self: center;
+  }
+  .advant__item-box {
+    padding-top: 50px;
+  }
+  .advant__item-box--othpad {
+    padding-top: 50px;
   }
   .advant__item-img {
     width: 200px;
@@ -770,6 +794,9 @@ body.lock {
   .baner-info {
     text-align: center;
   }
+  .baner__h4 {
+    padding: 0px;
+  }
 
   .h2__baner {
     text-align: center;
@@ -780,8 +807,18 @@ body.lock {
   }
 }
 @media (max-width: 869px) {
+  .advantages-wrapper {
+    gap: 15px;
+  }
   .advantages__underline {
     left: 17em;
+  }
+  .advantages__box {
+    padding-right: 20px;
+    padding-left: 50px;
+  }
+  .advantages__box-img {
+    width: 130px;
   }
 }
 @media (max-width: 800px) {
@@ -790,5 +827,45 @@ body.lock {
   }
   .telephone__info {
     padding: 35px 130px 72px 65px;
+  }
+}
+@media (max-width: 768px) {
+  .text {
+    font-size: 14px;
+  }
+
+  .h2 {
+    font-size: 32px;
+  }
+
+  .h3 {
+    font-size: 18px;
+  }
+
+  .h4 {
+    font-size: 16px;
+  }
+  .h4-regular {
+    font-size: 16px;
+  }
+
+  .baner__h1 {
+    font-size: 36px;
+  }
+
+  .advantages__underline {
+    left: 15em;
+    width: 265px;
+  }
+
+  .footer__menu-item-link {
+    font-size: 16px;
+  }
+  .footer__mail-link {
+    font-size: 16px;
+  }
+
+  .btn {
+    max-width: 350px;
   }
 }

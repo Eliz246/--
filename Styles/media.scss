@@ -6,13 +6,18 @@
         }
     }
 }
+@media(max-width:1180px){
+    .header{
+        padding-top: 30px;
+    }
+}
 @media(max-width:1125px){
     .steps{
         &-wrapper{
             gap:100px;
         }
         &__img{
-            width: 458px;
+            width: 400px;
             height: auto;
         }
     }
@@ -21,6 +26,11 @@
     .advantages{
         &__underline{
             left:7em;
+        }
+    }
+    .header{
+        &-wrapper{
+            grid-template-columns: 310px repeat(2, auto);
         }
     }
 }
@@ -38,6 +48,14 @@
         font-size: 18px;
         &-regular{
             font-size: 18px;
+        }
+    }
+    .btn{
+        font-size: 18px;
+    }
+    .baner{
+        &__h1{
+            font-size: 40px;
         }
     }
     .advantages{
@@ -165,15 +183,21 @@
     .advant{
         &-wrapper{
             grid-template-columns: 1fr;
-            row-gap: 50px;
+            row-gap: 120px;
             
         }
         &__item{
             justify-self: center;
+            &-box{
+                padding-top: 50px;
+                &--othpad{
+                    padding-top: 50px;
+                }
+            }
             &-img{
                 width: 200px;
                 max-height: 200px;
-                }
+            }
         }
     }
     .steps{
@@ -201,6 +225,9 @@
         &-info{
             text-align: center;
         }
+        &__h4{
+            padding: 0px;
+        }
     }
     .h2__baner{
         text-align: center;
@@ -213,8 +240,18 @@
 }
 @media(max-width:869px){
     .advantages{
+        &-wrapper{
+            gap:15px;
+        }
         &__underline{
             left:17em;
+        }
+        &__box{
+            padding-right: 20px;
+            padding-left: 50px;
+            &-img{
+                width: 130px;
+            }
         }
     }
 }
@@ -226,5 +263,44 @@
         &__info{
             padding: 35px 130px 72px 65px;
         }
+    }
+}
+@media(max-width:768px){
+    .text{
+        font-size: 14px;
+    }
+    .h2{
+        font-size: 32px;
+    }
+    .h3{
+        font-size: 18px;
+    }
+    .h4{
+        font-size: 16px;
+        &-regular{
+            font-size: 16px;
+        }
+    }
+    .baner{
+        &__h1{
+            font-size: 36px;
+        }
+    }
+    .advantages{
+        &__underline {
+            left: 15em;
+            width: 265px;
+        }
+    }
+    .footer{
+        &__menu-item-link {
+            font-size: 16px;
+        }
+        &__mail-link{
+            font-size: 16px;
+        }
+    }
+    .btn{
+        max-width: 350px ;
     }
 }
