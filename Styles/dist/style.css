@@ -698,11 +698,15 @@ body.lock {
     width: 30%;
     background: white;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    justify-content: center;
+    align-items: start;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
     transition: right 0.5s ease;
     z-index: 1200;
+  }
+  .header-menu__item {
+    padding-left: 50px;
+    padding-bottom: 15px;
   }
   .header-menu__item:last-child {
     display: inline;
