@@ -356,7 +356,7 @@
             font-size: 36px;
         }
         &__h4{
-            font-size: 14px;
+            font-size: 16px;
         }
         &__img{
             &-hag{
@@ -438,6 +438,11 @@
         }
     }
 }
+@media(max-width:635px) and (min-width:565px){
+    .h2--lowwidth {
+        width: 90%;
+    }
+}
 @media(max-width:630px){
     .h2--tel {
         width: 365px;
@@ -497,6 +502,13 @@
         }
     }
 }
+@media(max-width:565px){
+    .advantages{
+        &__underline {
+            left: 0em;
+        }
+    }
+}
 @media(max-width:500px){
     .question{
         &__item{
@@ -515,6 +527,13 @@
         }
         &__img {
             width: 100px;
+        }
+    }
+}
+@media(max-width:498px) and (min-width:463px){
+    .advantages{
+        &__underline {
+            left: 5em;
         }
     }
 }
@@ -557,6 +576,22 @@
         }
     }
 }
+@media(max-width:463px) and (min-width: 385px){
+    .h2--lowwidth{
+        width: 100%;
+    }
+}
+@media(max-width:424px){
+    .h2{
+        font-size: 24px;
+    }
+    .advantages{
+        &__underline {
+            left: 11.5em;
+            width: 200px;
+        }
+    }
+}
 @media(max-width:400px){
     .advantages{
         &-wrapper{
@@ -582,6 +617,25 @@
                     grid-row: 4;
                 }
             }
+        }
+    }
+}
+@media(max-width: 385px){
+    .advantages{
+        &__underline {
+            left: 0em;
+        }
+    }
+}
+@media(max-width: 385px){
+    .h2--lowwidth{
+        width: 85%;
+    }
+}
+@media(max-width: 354px){
+    .advantages{
+        &__underline {
+            left: 4em;
         }
     }
 }

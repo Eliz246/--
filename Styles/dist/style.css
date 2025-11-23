@@ -909,7 +909,7 @@ body.lock {
     font-size: 36px;
   }
   .baner__h4 {
-    font-size: 14px;
+    font-size: 16px;
   }
   .baner__img-hag {
     width: 400px;
@@ -978,6 +978,11 @@ body.lock {
     grid-row: 3;
   }
 }
+@media (max-width: 635px) and (min-width: 565px) {
+  .h2--lowwidth {
+    width: 90%;
+  }
+}
 @media (max-width: 630px) {
   .h2--tel {
     width: 365px;
@@ -1025,6 +1030,11 @@ body.lock {
     padding: 35px 50px 72px;
   }
 }
+@media (max-width: 565px) {
+  .advantages__underline {
+    left: 0em;
+  }
+}
 @media (max-width: 500px) {
   .question__item-cont {
     padding-right: 5px;
@@ -1039,6 +1049,11 @@ body.lock {
   }
   .telephone__img {
     width: 100px;
+  }
+}
+@media (max-width: 498px) and (min-width: 463px) {
+  .advantages__underline {
+    left: 5em;
   }
 }
 @media (max-width: 426px) {
@@ -1069,6 +1084,21 @@ body.lock {
     width: 140px;
   }
 }
+@media (max-width: 463px) and (min-width: 385px) {
+  .h2--lowwidth {
+    width: 100%;
+  }
+}
+@media (max-width: 424px) {
+  .h2 {
+    font-size: 24px;
+  }
+
+  .advantages__underline {
+    left: 11.5em;
+    width: 200px;
+  }
+}
 @media (max-width: 400px) {
   .advantages-wrapper {
     grid-template-columns: 1fr;
@@ -1089,5 +1119,20 @@ body.lock {
   .advantages__box-wthimg-two {
     grid-column: 1;
     grid-row: 4;
+  }
+}
+@media (max-width: 385px) {
+  .advantages__underline {
+    left: 0em;
+  }
+}
+@media (max-width: 385px) {
+  .h2--lowwidth {
+    width: 85%;
+  }
+}
+@media (max-width: 354px) {
+  .advantages__underline {
+    left: 4em;
   }
 }
