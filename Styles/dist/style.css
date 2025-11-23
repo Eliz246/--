@@ -509,7 +509,6 @@ body.lock {
 }
 .app__info-box {
   display: flex;
-  max-width: 100%;
   width: 520px;
   margin-bottom: 45px;
 }
@@ -837,6 +836,9 @@ body.lock {
   .h2__baner {
     text-align: center;
   }
+  .h2--app {
+    text-align: center;
+  }
 
   .app-wrapper {
     flex-wrap: wrap;
@@ -844,6 +846,9 @@ body.lock {
   }
   .app__info-box {
     justify-self: center;
+  }
+  .app__img {
+    position: static;
   }
 
   .h4--app {
@@ -955,6 +960,10 @@ body.lock {
   }
   .advantages__box-img {
     margin-right: 30px;
+  }
+
+  .app__info-box {
+    width: 440px;
   }
 
   .footer__menu-item-link {
@@ -1077,6 +1086,12 @@ body.lock {
     left: 5em;
   }
 }
+@media (max-width: 475px) {
+  .app__info-box {
+    width: 370px;
+    margin-bottom: 30px;
+  }
+}
 @media (max-width: 426px) {
   .baner__img-hag {
     width: 250px;
@@ -1114,6 +1129,9 @@ body.lock {
   .h2 {
     font-size: 24px;
   }
+  .h2--tel {
+    width: 250px;
+  }
 
   .advantages__underline {
     left: 11.5em;
@@ -1121,6 +1139,16 @@ body.lock {
   }
 }
 @media (max-width: 400px) {
+  .app__img {
+    position: static;
+  }
+  .app__info-box {
+    width: 300px;
+  }
+  .app__info-box-img {
+    margin-right: 15px;
+  }
+
   .advantages-wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
