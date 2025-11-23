@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../mixines.scss';
 .whywe{
     padding: 41px 0 190px;
     &__h2{
@@ -12,27 +13,24 @@
         grid-template-columns: repeat(3, 1fr);
     }
     &__item{
-        display: flex;
+        @include flex(0, center);
         position:relative;
-        justify-content: center;
         max-width: 380px;
     }
     &__item{
         &-box{
-            position: relative;
-            top: 120px;
+            @include position(relative,120px);
             padding: 90px 30px 30px;
             border-radius: 20px;
             background-color: $light-accent;
             text-align: center;
             align-self: start;
             &-h4{
-                letter-spacing: 0.7px;
-                font-weight: 600;
-                font-size: 24px;
+                @include text(0, 0.7px, 24px, 600);
                 margin-bottom: 15px;
             }
             &-text{
+                @include text(0, 0, 18px, 400);
                 font-weight: 400;
                 font-size: 18px;
             }
@@ -41,8 +39,7 @@
             }
         }
         &-img{
-            position:absolute;
-            z-index: 2;
+            @include position(absolute, 0,0,0,0,2);
             width: 220px;
             height: 220px;
         }

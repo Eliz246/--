@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../mixines.scss';
 .steps{
     padding: 95px 0 120px;
     background-color: $back-acc-col;
@@ -10,8 +11,7 @@
     }
     &__box{
         background: url(../../images/blob.svg) no-repeat 30px;
-        display: flex;
-        align-items: center;
+        @include flex(center);
         &-numb{
             height: auto;
             width: 89px;
@@ -19,8 +19,7 @@
         }
         &-calendar{
             background: url(../../images/blobmin.svg) no-repeat 30px;
-            display: flex;
-            align-items: center;
+            @include flex(center);
             padding-right: 60px;
             &-img{
                 margin-right: 20px;

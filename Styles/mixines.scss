@@ -21,7 +21,7 @@
     font-weight: $weight;
   }
 }
-@mixin position($pos, $top: 0, $bot: 0,$r: 0,$l: 0) {
+@mixin position($pos, $top: 0, $bot: 0,$r: 0,$l: 0, $z:0) {
   position: $pos;
   @if $top != 0 {
     top: $top;
@@ -34,5 +34,8 @@
   }
   @if $l != 0 {
     left: $l;
+  }
+  @if $z != 0 {
+    z-index: $z;
   }
 }

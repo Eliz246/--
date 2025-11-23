@@ -55,8 +55,6 @@
         &-link{
             @include text(0, 0, 18px, 600);
             text-decoration: none;
-            font-weight: 600;
-            font-size: 18px;
             color:$accent;
         }
     }

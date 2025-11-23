@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../mixines.scss';
 .question{
     padding: 120px 0 100px;
     &__item{
@@ -9,9 +10,7 @@
         &-head{
             background: url(../../images/plus.svg) no-repeat;
             background-position: right top 65%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            @include flex(center,space-between);
             padding-right: 200px;
             cursor:pointer;
             height: max-content;
@@ -20,10 +19,8 @@
             padding: 9px 100px 21px;
         }
         &-cont{
-            font-size: 18px;
+            @include text(1.5, 0.2px, 18px);
             padding-right: 300px;
-            letter-spacing: 0.2px;
-            line-height: 1.5;
         }
         &[open] .question__item-head{
             background: url(../../images/minus.svg) no-repeat;

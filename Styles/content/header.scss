@@ -1,9 +1,8 @@
 @import '../variables.scss';
+@import '../mixines.scss';
 .header{
     padding-top: 70px;
-    position: sticky;
-    top: 0px;
-    z-index: 1000;
+    @include position(sticky, 0px, 0,0,0, 1000);
     background-color: $back-acc-col;
     box-shadow: 0 5px 10px rgba(0,0, 0, 0);
     transition: all 0.3s ease;
@@ -16,9 +15,8 @@
         grid-template-columns: 310px auto 330px;
     }
     &-menu{
+        @include flex(0, space-between);
         list-style-type: none;
-        display: flex;
-        justify-content: space-between;
         align-self: center;
         font-weight: 600;
         padding: 0px;
@@ -44,18 +42,15 @@
     }
 }
 .btn-invers{
+    @include text(0, 1px, 16px, 600);
     font-family: 'Montserrat';
-    letter-spacing: 1px;
     border:2px solid $accent;
     border-radius: 15px;
     color:$accent;
-    max-width: 240px;
     width: 240px;
     height: 50px;
     background-color: $back-color;
-    font-size: 16px;
     justify-self: end;
-    font-weight: 600; 
     transition: background-color 0.2s ease;
     &:hover{
         background-color: rgba($text-color, 0.25);

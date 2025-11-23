@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../mixines.scss';
 .telephone{
     padding: 125px 0 150px;
     &__img{
@@ -9,8 +10,7 @@
     &__info{
         background-color:$back-acc-col;
         border-radius: 25px;
-        position: relative;
-        top: 30px;
+        @include position(relative,30px);
         padding: 55px 130px 72px 100px;
     }
     &__box{
