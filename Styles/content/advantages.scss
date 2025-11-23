@@ -1,7 +1,6 @@
 @import '../variables.scss';
 .advantages{
-    padding-top: 85px;
-    padding-bottom: 100px;
+    padding: 85px 0 100px;
     &__underline{
         position: relative;
         left: 32em;
@@ -20,7 +19,7 @@
             align-self: center;
         }
         &-img{
-            max-width: 150px;
+            width: 150px;
             margin-right: 50px;
             align-self: center;
         }

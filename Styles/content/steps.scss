@@ -1,7 +1,6 @@
 @import '../variables.scss';
 .steps{
-    padding-top: 95px;
-    padding-bottom: 120px;
+    padding: 95px 0 120px;
     background-color: $back-acc-col;
     &-wrapper{
         display: grid;
@@ -14,7 +13,6 @@
         display: flex;
         align-items: center;
         &-numb{
-            max-width: 100%;
             height: auto;
             width: 89px;
             margin-right: 55px;

@@ -1,7 +1,6 @@
 @import '../variables.scss';
 .footer{
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding: 55px 0;
     background-color: $back-acc-col;
     &-wrapper{
         display: grid;

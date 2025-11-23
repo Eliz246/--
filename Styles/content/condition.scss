@@ -1,7 +1,6 @@
 @import '../variables.scss';
 .condition{
-    padding-top: 145px;
-    padding-bottom: 90px;
+    padding: 100px 0 90px;
     background-color: $back-acc-col;
     text-align: center;
     &__arr{
@@ -16,8 +15,7 @@
             letter-spacing: 0.2px;
         }
         &-img{
-            margin-top: 50px;
-            margin-left: 55px;
+            margin: 50px 0 0 55px;
         }
     }
     &__marquee{
@@ -56,13 +54,13 @@
             gap:30px;
         }
         &-inner{
-           display: flex;
-           animation-timing-function: linear;
-           animation-iteration-count: infinite;
-           animation-fill-mode: forwards;
-           animation-play-state: running;
-           will-change: transform;
-           gap: 30px;
+            display: flex;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards;
+            animation-play-state: running;
+            will-change: transform;
+            gap: 30px;
             &-btn{
                 flex: 0 0 auto;
                 background-color: $back-color;

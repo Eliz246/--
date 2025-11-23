@@ -1,7 +1,6 @@
 @import '../variables.scss';
 .baner{
-    padding-top: 70px;
-    padding-bottom: 41px;
+    padding: 70px 0 41px;
     background-color: $back-acc-col;
     &-wrapper{
         display: flex;

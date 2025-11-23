@@ -1,7 +1,6 @@
 @import '../variables.scss';
 .question{
-    padding-top: 120px;
-    padding-bottom: 100px;
+    padding: 120px 0 100px;
     &__item{
         background-color: $light-accent;
         border-radius: 25px;
