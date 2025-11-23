@@ -225,8 +225,7 @@ body.lock {
 }
 
 .baner {
-  padding-top: 70px;
-  padding-bottom: 41px;
+  padding: 70px 0 41px;
   background-color: #F9FCFF;
 }
 .baner-wrapper {
@@ -258,8 +257,7 @@ body.lock {
 }
 
 .whywe {
-  padding-top: 41px;
-  padding-bottom: 190px;
+  padding: 41px 0 190px;
 }
 .whywe__h2 {
   margin-bottom: 80px;
@@ -306,8 +304,7 @@ body.lock {
 }
 
 .condition {
-  padding-top: 100px;
-  padding-bottom: 90px;
+  padding: 100px 0 90px;
   background-color: #F9FCFF;
   text-align: center;
 }
@@ -324,8 +321,7 @@ body.lock {
   letter-spacing: 0.2px;
 }
 .condition__arr-img {
-  margin-top: 50px;
-  margin-left: 55px;
+  margin: 50px 0 0 55px;
 }
 .condition__marquee-wrapper {
   display: flex;
@@ -384,8 +380,7 @@ body.lock {
 }
 
 .advantages {
-  padding-top: 85px;
-  padding-bottom: 100px;
+  padding: 85px 0 100px;
 }
 .advantages__underline {
   position: relative;
@@ -406,7 +401,7 @@ body.lock {
   align-self: center;
 }
 .advantages__box-img {
-  max-width: 150px;
+  width: 150px;
   margin-right: 50px;
   align-self: center;
 }
@@ -434,8 +429,7 @@ body.lock {
 }
 
 .steps {
-  padding-top: 95px;
-  padding-bottom: 120px;
+  padding: 95px 0 120px;
   background-color: #F9FCFF;
 }
 .steps-wrapper {
@@ -450,7 +444,6 @@ body.lock {
   align-items: center;
 }
 .steps__box-numb {
-  max-width: 100%;
   height: auto;
   width: 89px;
   margin-right: 55px;
@@ -469,8 +462,7 @@ body.lock {
 }
 
 .question {
-  padding-top: 120px;
-  padding-bottom: 100px;
+  padding: 120px 0 100px;
 }
 .question__item {
   background-color: #EBF5FF;
@@ -506,8 +498,7 @@ body.lock {
 }
 
 .app {
-  padding-top: 100px;
-  padding-bottom: 130px;
+  padding: 100px 0 130px;
   background-color: #F9FCFF;
 }
 .app-wrapper {
@@ -530,8 +521,7 @@ body.lock {
 }
 
 .telephone {
-  padding-top: 125px;
-  padding-bottom: 150px;
+  padding: 125px 0 150px;
 }
 .telephone__img {
   position: absolute;
@@ -555,8 +545,7 @@ body.lock {
 }
 
 .footer {
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding: 55px 0;
   background-color: #F9FCFF;
 }
 .footer-wrapper {
