@@ -308,6 +308,7 @@ body.lock {
 .condition {
   padding-top: 145px;
   padding-bottom: 90px;
+  background-color: #F9FCFF;
   text-align: center;
 }
 .condition__arr {
@@ -385,7 +386,6 @@ body.lock {
 .advantages {
   padding-top: 85px;
   padding-bottom: 100px;
-  background-color: #F9FCFF;
 }
 .advantages__underline {
   position: relative;
@@ -507,7 +507,7 @@ body.lock {
 
 .app {
   padding-top: 100px;
-  padding-bottom: 255px;
+  padding-bottom: 130px;
   background-color: #F9FCFF;
 }
 .app-wrapper {
@@ -530,6 +530,7 @@ body.lock {
 }
 
 .telephone {
+  padding-top: 125px;
   padding-bottom: 150px;
 }
 .telephone__img {
