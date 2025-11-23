@@ -1,5 +1,7 @@
 .app{
+    padding-top: 100px;
     padding-bottom: 255px;
+    background-color: $back-acc-col;
     &-wrapper{
         display: flex;
         gap:70px;

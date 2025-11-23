@@ -1,6 +1,8 @@
 @import '../variables.scss';
 .steps{
-    padding-bottom: 240px;
+    padding-top: 95px;
+    padding-bottom: 120px;
+    background-color: $back-acc-col;
     &-wrapper{
         display: grid;
         grid-template-columns: min-content auto;
