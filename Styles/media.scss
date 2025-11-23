@@ -21,6 +21,13 @@
             height: auto;
         }
     }
+    .question{
+        &__item{
+            &-head{
+                background-position: right top 60%;
+           }
+        }
+    }
 }
 @media(max-width:1096px){
     .advantages{
@@ -31,6 +38,13 @@
     .header{
         &-wrapper{
             grid-template-columns: 310px repeat(2, auto);
+        }
+    }
+    .question{
+        &__item{
+            &-cont{
+                padding-right: 170px;
+            }
         }
     }
 }
@@ -56,6 +70,13 @@
     .baner{
         &__h1{
             font-size: 40px;
+        }
+    }
+    .question{
+        &__item{
+            &-cont{
+                font-size: 16px;
+            }
         }
     }
     .advantages{
@@ -152,6 +173,14 @@
             width: 350px;
         }
     }
+    .question{
+        &__item{
+            padding:6px 60px 15px;
+            &-cont{
+                padding-right: 90px;
+            }
+        }
+    }
     .footer{
         &-wrapper{
             grid-template-rows: repeat(2,auto);
@@ -208,7 +237,7 @@
             grid-template-rows: repeat(3,auto);
         }
         &__box{
-            background-size: 200px;
+            background-size: 115px;
         }
         &__img{
             display: none;
@@ -237,6 +266,17 @@
     .app{
         &-wrapper{
             flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__info{
+            &-box{
+                justify-self: center;
+            }
+        }
+    }
+    .h4{
+        &--app{
+            text-align: center;
         }
     }
 }
@@ -288,6 +328,16 @@
             font-size: 36px;
         }
     }
+    .question{
+        &__item{
+            &-head{
+                padding-right: 60px;
+            }
+            &-cont{
+                font-size: 14px;
+            }
+        }
+    }
     .advantages{
         &__underline {
             left: 15em;
@@ -304,5 +354,21 @@
     }
     .btn{
         max-width: 350px ;
+    }
+}
+@media(max-width:600px){
+    .question{
+        &__item{
+            padding:6px 30px 15px;
+        }
+    }
+}
+@media(max-width:500px){
+    .question{
+        &__item{
+            &-cont{
+                padding-right: 5px;
+            }
+        }
     }
 }
