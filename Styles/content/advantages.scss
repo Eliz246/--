@@ -20,7 +20,6 @@
         }
         &-img{
             max-width: 150px;
-            max-height: 150px;
             margin-right: 50px;
             align-self: center;
         }
@@ -43,6 +42,7 @@
                 grid-column: 6/-1;
                 grid-row: 2;
                 display: flex;
+                padding-right: 130px;
             }
         }
     }

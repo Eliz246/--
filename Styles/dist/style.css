@@ -406,7 +406,6 @@ body.lock {
 }
 .advantages__box-img {
   max-width: 150px;
-  max-height: 150px;
   margin-right: 50px;
   align-self: center;
 }
@@ -430,6 +429,7 @@ body.lock {
   grid-column: 6/-1;
   grid-row: 2;
   display: flex;
+  padding-right: 130px;
 }
 
 .steps {
@@ -738,6 +738,10 @@ body.lock {
     cursor: pointer;
     z-index: 1300;
   }
+
+  .advantages__box-wthimg-two {
+    padding-right: 50px;
+  }
 }
 @media (max-width: 988px) {
   .advantages__underline {
@@ -925,6 +929,12 @@ body.lock {
     left: 15em;
     width: 265px;
   }
+  .advantages__box {
+    padding-left: 35px;
+  }
+  .advantages__box-img {
+    margin-right: 30px;
+  }
 
   .footer__menu-item-link {
     font-size: 16px;
@@ -945,6 +955,27 @@ body.lock {
 
   .h4-regular--tel {
     padding-right: 50px;
+  }
+
+  .advantages-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+  }
+  .advantages__box-one {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .advantages__box-two {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .advantages__box-wthimg-one {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+  .advantages__box-wthimg-two {
+    grid-column: 1/-1;
+    grid-row: 3;
   }
 }
 @media (max-width: 630px) {
@@ -1018,6 +1049,13 @@ body.lock {
     width: 40px;
   }
 
+  .advantages__box {
+    padding-left: 20px;
+  }
+  .advantages__box-img {
+    width: 110px;
+  }
+
   .telephone-wrapper {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, auto);
@@ -1029,5 +1067,27 @@ body.lock {
   .footer__socnet-logo {
     margin-bottom: 15px;
     width: 140px;
+  }
+}
+@media (max-width: 400px) {
+  .advantages-wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+  .advantages__box-one {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .advantages__box-two {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .advantages__box-wthimg-one {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .advantages__box-wthimg-two {
+    grid-column: 1;
+    grid-row: 4;
   }
 }
