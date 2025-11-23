@@ -1,8 +1,7 @@
 @import '../variables.scss';
 @import '../mixines.scss';
 .footer{
-    padding: 55px 0;
-    background-color: $back-acc-col;
+    @include section(55px 0);
     &-wrapper{
         display: grid;
         grid-template-columns: 190px 160px 140px 150px 260px;
@@ -19,8 +18,7 @@
         }
     }
     &__min-text{
-        font-size: 14px;
-        color:$text-color;
+        @include text(0,0,0,14px,$text-color);
         margin:0px;
     }
     &__menu{
@@ -31,9 +29,8 @@
             font-weight: 600;
             margin-bottom: 27px;
             &-link{
+                @include text(0,0,0,18px,$accent);
                 text-decoration: none;
-                color:$accent;
-                font-size: 18px;
             }
         }
     }
@@ -53,9 +50,8 @@
             margin-bottom: 10px;
         }
         &-link{
-            @include text(0, 0, 18px, 600);
+            @include text(0, 0, 18px, 600,$accent);
             text-decoration: none;
-            color:$accent;
         }
     }
 }

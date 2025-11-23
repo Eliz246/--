@@ -12,8 +12,7 @@
         gap:30px;
     }
     &__box{
-        background-color: $light-accent;
-        border-radius: 20px;
+        @include bac-col-rad($light-accent, 20px);
         padding: 42px 90px 42px 100px;
         &-text{
             align-self: center;

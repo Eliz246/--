@@ -3,13 +3,10 @@
 .telephone{
     padding: 125px 0 150px;
     &__img{
-        position: absolute;
-        left: 70%;
-        z-index: 2;
+        @include position(absolute, 0,0,0,70%,2);
     }
     &__info{
-        background-color:$back-acc-col;
-        border-radius: 25px;
+        @include bac-col-rad($back-acc-col, 25px);
         @include position(relative,30px);
         padding: 55px 130px 72px 100px;
     }

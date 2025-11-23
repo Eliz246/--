@@ -1,8 +1,7 @@
 @import '../variables.scss';
 @import '../mixines.scss';
 .steps{
-    padding: 95px 0 120px;
-    background-color: $back-acc-col;
+    @include section(95px 0 120px);
     &-wrapper{
         display: grid;
         grid-template-columns: min-content auto;

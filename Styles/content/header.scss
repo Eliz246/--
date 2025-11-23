@@ -1,9 +1,8 @@
 @import '../variables.scss';
 @import '../mixines.scss';
 .header{
-    padding-top: 70px;
+    @include section(70px 0 0 0);
     @include position(sticky, 0px, 0,0,0, 1000);
-    background-color: $back-acc-col;
     box-shadow: 0 5px 10px rgba(0,0, 0, 0);
     transition: all 0.3s ease;
     &.scrolled{
@@ -31,8 +30,7 @@
                 color:$text-color;
                 transition: font-weight 0.2s ease, color 0.2s ease;
                 &:hover{
-                    font-weight: 700;
-                    color:$accent;
+                    @include text(0,0,0,700,$accent);
                 }
             }
             &:last-child{
@@ -42,14 +40,11 @@
     }
 }
 .btn-invers{
-    @include text(0, 1px, 16px, 600);
-    font-family: 'Montserrat';
+    @include text(0, 1px, 16px, 600, $accent, 'Montserrat');
     border:2px solid $accent;
-    border-radius: 15px;
-    color:$accent;
+    @include bac-col-rad($back-color,15px);
     width: 240px;
     height: 50px;
-    background-color: $back-color;
     justify-self: end;
     transition: background-color 0.2s ease;
     &:hover{

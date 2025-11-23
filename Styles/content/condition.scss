@@ -1,8 +1,7 @@
 @import '../variables.scss';
 @import '../mixines.scss';
 .condition{
-    padding: 100px 0 90px;
-    background-color: $back-acc-col;
+    @include section(100px 0 90px);
     text-align: center;
     &__arr{
         @include flex(0,center);
@@ -46,31 +45,25 @@
             }
         }
         &-track{
-            display: flex;
-            gap:30px;
+            @include flex(0,0,30px);
         }
         &-inner{
-            display: flex;
+            @include flex(0,0,30px);
             animation-timing-function: linear;
             animation-iteration-count: infinite;
             animation-fill-mode: forwards;
             animation-play-state: running;
             will-change: transform;
-            gap: 30px;
             &-btn{
                 flex: 0 0 auto;
-                background-color: $back-color;
+                @include bac-col-rad($back-color,40px);
                 border: 2px solid $accent;
                 margin:10px 0px;
-                color:$accent;
-                border-radius: 40px;
                 padding: 13px 27px;
-                font-family: 'Montserrat';
-                @include text(0, 0, 20px, 600);
+                @include text(0, 0, 20px, 600,$accent,'Montserrat');
                 transition: 
                     transform 0.3s ease,
                     opacity 0.3s ease;
-                
             }
         }
     }

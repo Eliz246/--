@@ -1,8 +1,7 @@
 @import '../variables.scss';
 @import '../mixines.scss';
 .baner{
-    padding: 70px 0 41px;
-    background-color: $back-acc-col;
+    @include section(70px 0 41px);
     &-wrapper{
         @include flex(0, space-between);
     }
@@ -16,10 +15,8 @@
         }
     }
     &__h1{
-        @include text(0, 1px, 44px, 800);
-        color: $accent;
-        margin-bottom: 10px;
-        margin-top:20px ;
+        @include text(0, 1px, 44px, 800, $accent);
+        margin: 20px 0 10px;
     }
     &__h4{
         margin-top: 0px;

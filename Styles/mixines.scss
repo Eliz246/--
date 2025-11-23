@@ -1,41 +1,59 @@
-@mixin flex($align:0, $just: 0) {
-  display: flex;
-  @if $align != 0 {
-    align-items: $align;
-  }
-  @if $just != 0 {
-    justify-content: $just;
-  }
+@import './variables.scss';
+@mixin flex($align:0, $just: 0,$gap:0) {
+    display: flex;
+    @if $align != 0 {
+        align-items: $align;
+    }
+    @if $just != 0 {
+        justify-content: $just;
+    }
+    @if $gap != 0 {
+        gap: $gap;
+    }
 }
-@mixin text($line:0, $letter: 0, $size:0, $weight:0) {
-  @if $line != 0 {
-    line-height: $line;
-  }
-  @if $letter != 0 {
-    letter-spacing: $letter;
-  }
-  @if $size != 0 {
-    font-size: $size;
-  }
-  @if $weight != 0 {
-    font-weight: $weight;
-  }
+@mixin text($line:0, $letter: 0, $size:0, $weight:0, $color:0, $fam:0) {
+    @if $line != 0 {
+        line-height: $line;
+    }
+    @if $letter != 0 {
+        letter-spacing: $letter;
+    }
+    @if $size != 0 {
+        font-size: $size;
+    }
+    @if $weight != 0 {
+        font-weight: $weight;
+    }
+    @if $color != 0 {
+        color: $color;
+    }
+    @if $fam !=0{
+        font-family: $fam;
+    }
 }
 @mixin position($pos, $top: 0, $bot: 0,$r: 0,$l: 0, $z:0) {
-  position: $pos;
-  @if $top != 0 {
-    top: $top;
-  }
-  @if $bot != 0 {
-    bottom: $bot;
-  }
-  @if $r != 0 {
-    right: $r;
-  }
-  @if $l != 0 {
-    left: $l;
-  }
-  @if $z != 0 {
-    z-index: $z;
-  }
+    position: $pos;
+    @if $top != 0 {
+        top: $top;
+    }
+    @if $bot != 0 {
+        bottom: $bot;
+    }
+    @if $r != 0 {
+        right: $r;
+    }
+    @if $l != 0 {
+        left: $l;
+    }
+    @if $z != 0 {
+        z-index: $z;
+    }
+}
+@mixin bac-col-rad($color,$rad){
+    background-color: $color;
+    border-radius: $rad;
+}
+@mixin section($pad){
+    padding: $pad;
+    background-color: $back-acc-col;
 }

@@ -1,11 +1,9 @@
 @import '../variables.scss';
 @import '../mixines.scss';
 .app{
-    padding: 100px 0 130px;
-    background-color: $back-acc-col;
+    @include section(100px 0 130px);
     &-wrapper{
-        @include flex(0, space-between);
-        gap:70px;
+        @include flex(0, space-between,70px);
         margin-bottom: 55px;
     }
     &__info{
