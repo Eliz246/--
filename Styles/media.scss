@@ -71,6 +71,9 @@
         &__h1{
             font-size: 40px;
         }
+        &__h4{
+            font-size: 16px;
+        }
     }
     .question{
         &__item{
@@ -210,6 +213,13 @@
         }
     }
 }
+@media(max-width:920px){
+    .h4-regular{
+        &--tel {
+            padding-right: 170px;
+        }
+    }
+}
 @media(max-width:900px){
     .advant{
         &-wrapper{
@@ -313,6 +323,12 @@
     }
     .h2{
         font-size: 32px;
+        &--tel{
+            width: 400px;
+        }
+        &--app {
+            text-align: center;
+        }
     }
     .h3{
         font-size: 18px;
@@ -321,11 +337,25 @@
         font-size: 16px;
         &-regular{
             font-size: 16px;
+            &--tel {
+                padding-right: 130px;
+            }
         }
     }
     .baner{
         &__h1{
             font-size: 36px;
+        }
+        &__h4{
+            font-size: 14px;
+        }
+        &__img{
+            &-hag{
+                width: 400px;
+            }
+            &-chat{
+                width: 60px;
+            }
         }
     }
     .question{
@@ -353,7 +383,52 @@
         }
     }
     .btn{
-        max-width: 350px ;
+        font-size: 16px;
+        max-width: 300px ;
+    }
+}
+@media(max-width:660px){
+    .telephone{
+        &__img{
+            width: 160px;
+        }
+    }
+    .h4-regular--tel {
+        padding-right: 50px;
+    }
+}
+@media(max-width:630px){
+    .h2--tel {
+        width: 365px;
+    }
+    .footer{
+        &-wrapper{
+            grid-template-rows: repeat(3,auto);
+            grid-template-columns: repeat(2,1fr);
+            grid-template-areas: 
+            "socnet mail"
+            "start end"
+            "doc doc"
+            ;
+            row-gap: 15px;
+        }
+        &__socnet{
+            grid-area: socnet;
+        }
+        &__menu{
+            &--start{
+                grid-area: start;
+            }
+            &--end{
+                grid-area: end;
+            }
+        }
+        &__doc{
+            grid-area: doc;
+        }
+        &__mail{
+            grid-area: mail;
+        }
     }
 }
 @media(max-width:600px){
@@ -362,12 +437,73 @@
             padding:6px 30px 15px;
         }
     }
+    .baner{
+        &__img{
+            &-hag{
+                width: 300px;
+            }
+            &-chat{
+                width: 50px;
+            }
+        }
+    }
+    .h4-regular--tel {
+        padding-right: 0px;
+    }
+    .telephone{
+        &__info{
+            padding: 35px 50px 72px;
+        }
+    }
 }
 @media(max-width:500px){
     .question{
         &__item{
             &-cont{
                 padding-right: 5px;
+            }
+        }
+    }
+    .telephone{
+        &-wrapper{
+            column-gap: 20px;
+        }
+        &__info{
+            top:15px;
+            padding: 12px 12px 72px;
+        }
+        &__img {
+            width: 100px;
+        }
+    }
+}
+@media(max-width:426px){
+    .baner{
+        &__img{
+            &-hag{
+                width: 250px;
+            }
+            &-chat{
+                width: 40px;
+            }
+        }
+    }
+    .telephone{
+        &-wrapper{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, auto);
+        }
+    }
+    .footer{
+        &__socnet{
+            &-link{
+                &-item{
+                    margin-right: 7px;
+                }
+            }
+            &-logo{
+                margin-bottom: 15px;
+                width: 140px;
             }
         }
     }
