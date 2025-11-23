@@ -2,8 +2,7 @@
 .advantages{
     padding: 85px 0 100px;
     &__underline{
-        position: relative;
-        left: 32em;
+        @include position(relative,0, 0,0,32em);
     }
     &-wrapper{
         display:grid;

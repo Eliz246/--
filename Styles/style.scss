@@ -1,4 +1,5 @@
 @import './variables.scss';
+@import './mixines.scss';
 body{
     margin: 0px;
     font-family: 'Montserrat';
@@ -12,26 +13,20 @@ body{
     max-width: 1180px;
 }
 .text{
-    font-size: 18px;
-    line-height: 1.4;
-    letter-spacing: 0.3px;
+    @include text(1.4, 0.3px, 18px, 0);
     &--app{
         margin: 0px;
         letter-spacing: 0.2px;
     }
 }
 .h2{
-    line-height: 1.3;
-    letter-spacing: 0.7px;
-    font-weight: 800;
-    font-size: 40px;
+    @include text(1.3, 0.7px, 40px, 800);
     color: $accent;
     text-align: center;
     margin: 0px;
     &__baner{
-        letter-spacing: 0px;
+        @include text(1.4, 0px);
         color:$text-color;
-        line-height: 1.4;
         margin: 0px 0px 80px 0px;
         text-align: start;
     }
@@ -55,10 +50,7 @@ body{
     }
 }
 .h3{
-    line-height: 1.4;
-    letter-spacing: 0.3px;
-    font-size: 24px;
-    font-weight: 600;
+    @include text(1.4, 0.3px, 24px, 600);
     margin: 0px;
     &--marg-b10{
         margin-bottom: 10px;
@@ -68,14 +60,9 @@ body{
     }
 }
 .h4{
-    font-size: 20px;
-    letter-spacing: 0.2px;
-    line-height: 1.4;
+    @include text(1.4, 0.2px, 20px);
     &-regular{
-        font-size: 20px;
-        letter-spacing: 0.2px;
-        line-height: 1.4;
-        font-weight: 400;
+        @include text(1.4, 0.2px, 20px, 400);
         margin: 0px;
         &--tel{
             padding-right: 210px;
@@ -99,11 +86,9 @@ body{
 }
 .btn{
     font-family: 'Montserrat';
-    letter-spacing: 0.4px;
+    @include text(0, 0.4px, 20px, 700);
     color:$back-color;
     background-color: $accent;
-    font-weight: 700;
-    font-size: 20px;
     border-color: $accent;
     border-radius: 15px;
     max-width: 420px;
@@ -122,10 +107,8 @@ body{
         width: 410px;
     }
     &--center{
-        display: flex;
+        @include flex(center,center);
         justify-self: center;
-        justify-content: center;
-        align-items: center;
     }
 }
 @keyframes scroll-left{

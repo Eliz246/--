@@ -2,10 +2,9 @@
     padding: 100px 0 130px;
     background-color: $back-acc-col;
     &-wrapper{
-        display: flex;
+        @include flex(0, space-between);
         gap:70px;
         margin-bottom: 55px;
-        justify-content: space-between;
     }
     &__info{
         &-box{
@@ -18,7 +17,6 @@
         }
     }
     &__img{
-        position: relative;
-        bottom: 15px;
+        @include position(relative,0,15px);
     }
 }
