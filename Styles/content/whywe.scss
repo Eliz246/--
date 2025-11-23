@@ -8,9 +8,7 @@
 }
 .advant{
     &-wrapper{
-        display: grid;
-        column-gap: 20px;
-        grid-template-columns: repeat(3, 1fr);
+        @include grid(repeat(3, 1fr),0,20px);
     }
     &__item{
         @include flex(0, center);
@@ -37,8 +35,7 @@
         }
         &-img{
             @include position(absolute, 0,0,0,0,2);
-            width: 220px;
-            height: 220px;
+            @include size(220px, 220px);
         }
     }
 }

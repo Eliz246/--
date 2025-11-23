@@ -2,8 +2,7 @@
 @import './mixines.scss';
 body{
     margin: 0px;
-    font-family: 'Montserrat';
-    color: $text-color;
+    @include text(0,0,0,0,$text-color,'Montserrat');
     &.lock{
         overflow: hidden;
     }
@@ -20,13 +19,11 @@ body{
     }
 }
 .h2{
-    @include text(1.3, 0.7px, 40px, 800);
-    color: $accent;
+    @include text(1.3, 0.7px, 40px, 800,$accent);
     text-align: center;
     margin: 0px;
     &__baner{
-        @include text(1.4, 0px);
-        color:$text-color;
+        @include text(1.4, 0px,0,0,$text-color);
         margin: 0px 0px 80px 0px;
         text-align: start;
     }
@@ -85,15 +82,11 @@ body{
     }
 }
 .btn{
-    font-family: 'Montserrat';
-    @include text(0, 0.4px, 20px, 700);
-    color:$back-color;
-    background-color: $accent;
+    @include text(0, 0.4px, 20px, 700,$back-color,'Montserrat');
+    @include bac-col-rad($accent,15px);
     border-color: $accent;
-    border-radius: 15px;
     max-width: 420px;
-    width: 380px;
-    height: 70px;
+    @include size(380px,70px);
     box-shadow: 10px 15px $light-accent;
     transition: box-shadow 0.2s ease;
     &:hover{

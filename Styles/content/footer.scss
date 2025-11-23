@@ -3,8 +3,7 @@
 .footer{
     @include section(55px 0);
     &-wrapper{
-        display: grid;
-        grid-template-columns: 190px 160px 140px 150px 260px;
+        @include grid(190px 160px 140px 150px 260px);
         justify-content: space-between;
     }
     &__socnet{

@@ -3,10 +3,7 @@
 .steps{
     @include section(95px 0 120px);
     &-wrapper{
-        display: grid;
-        grid-template-columns: min-content auto;
-        grid-template-rows: repeat(5,auto);
-        gap:150px
+        @include grid(min-content auto,repeat(5,auto),0,0,150px);
     }
     &__box{
         background: url(../../images/blob.svg) no-repeat 30px;

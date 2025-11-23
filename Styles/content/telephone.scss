@@ -14,8 +14,6 @@
         margin-bottom: 30px;
     }
     &-wrapper{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 50px;
+        @include grid(repeat(2, 1fr),0,50px);
     }
 }

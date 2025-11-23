@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap");
 body {
   margin: 0px;
-  font-family: "Montserrat";
   color: #4D4D52;
+  font-family: "Montserrat";
 }
 body.lock {
   overflow: hidden;
@@ -104,14 +104,14 @@ body.lock {
 }
 
 .btn {
-  font-family: "Montserrat";
   letter-spacing: 0.4px;
   font-size: 20px;
   font-weight: 700;
   color: #ffffff;
+  font-family: "Montserrat";
   background-color: #7872B9;
-  border-color: #7872B9;
   border-radius: 15px;
+  border-color: #7872B9;
   max-width: 420px;
   width: 380px;
   height: 70px;
@@ -263,8 +263,8 @@ body.lock {
 
 .advant-wrapper {
   display: grid;
-  column-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
 }
 .advant__item {
   display: flex;

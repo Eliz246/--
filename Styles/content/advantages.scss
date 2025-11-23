@@ -6,10 +6,7 @@
         @include position(relative,0, 0,0,32em);
     }
     &-wrapper{
-        display:grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(2,auto);
-        gap:30px;
+        @include grid(repeat(12, 1fr),repeat(2,auto),0,0,30px);
     }
     &__box{
         @include bac-col-rad($light-accent, 20px);
