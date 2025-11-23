@@ -1,17 +1,15 @@
 @import './variables.scss';
-@media(max-width:1131px){
-    .advantages{
-        &__underline{
-            left:0em;
-        }
-    }
-}
 @media(max-width:1180px){
     .header{
         padding-top: 30px;
     }
     .container{
         padding: 0px 10px;
+    }
+}
+@media(max-width:1151px){
+    .h2--advantages {
+        width: 90%;
     }
 }
 @media(max-width:1125px){
@@ -33,11 +31,6 @@
     }
 }
 @media(max-width:1096px){
-    .advantages{
-        &__underline{
-            left:7em;
-        }
-    }
     .header{
         &-wrapper{
             grid-template-columns: 310px repeat(2, auto);
@@ -115,13 +108,6 @@
         }
     }
 }
-@media(max-width:1020px){
-    .advantages{
-        &__underline{
-            left:0em;
-        }
-    }
-}
 @media (max-width:1000px){
     .btn-invers{
         display: none;
@@ -169,11 +155,14 @@
         }
     }
 }
-@media(max-width:988px){
+@media(max-width:927px){
     .advantages{
         &__underline{
             left:6em;
         }
+    }
+    .h2--advantages {
+        width: 80%;
     }
 }
 @media(max-width:960px){
@@ -316,9 +305,6 @@
         &-wrapper{
             gap:15px;
         }
-        &__underline{
-            left:17em;
-        }
         &__box{
             padding-right: 20px;
             padding-left: 50px;
@@ -326,6 +312,11 @@
                 width: 130px;
             }
         }
+    }
+}
+@media(max-width:837px){
+    .advantages__underline {
+        left: 17em;
     }
 }
 @media(max-width:800px){
@@ -490,7 +481,7 @@
         &__box{
             display: block;
             text-align: center;
-            width: 310px;
+            width: 300px;
             background-position: top center;
             background-size: 70px;
             &-numb{
@@ -500,7 +491,7 @@
             &-calendar{
                 display: block;
                 text-align: center;
-                width: 310px;
+                width: 300px;
                 background-position: top center;
                 background-size: 70px;
                 &-img{
@@ -515,7 +506,7 @@
     }
 }
 @media(max-width:635px) and (min-width:565px){
-    .h2--lowwidth {
+    .h2--advantages {
         width: 90%;
     }
 }
@@ -603,6 +594,7 @@
         }
         &__img {
             width: 100px;
+            left:65%;
         }
     }
 }
@@ -632,9 +624,10 @@
     }
     .advantages{
         &__box {
-            padding-left: 20px;
+            padding: 15px;
             &-img{
-                width: 110px;
+                width: 100px;
+                margin-right: 15px;
             }
         }
     }
@@ -658,8 +651,8 @@
         }
     }
 }
-@media(max-width:463px) and (min-width: 385px){
-    .h2--lowwidth{
+@media(max-width:463px) and (min-width: 405px){
+    .h2--advantages{
         width: 100%;
     }
 }
@@ -670,7 +663,6 @@
             width: 250px;
         }
     }
-
     .advantages{
         &__underline {
             left: 11.5em;
@@ -682,6 +674,7 @@
     .app{
         &__img {
             position:static;
+            width: 280px;
         }
         &__info-box {
             width: 300px;
@@ -694,6 +687,9 @@
         &-wrapper{
             grid-template-columns: 1fr;
             grid-template-rows: repeat(4,auto);
+        }
+        &__underline{
+            left:0em;
         }
         &__box{
             &-one{
@@ -724,12 +720,12 @@
         }
     }
 }
-@media(max-width: 385px){
-    .h2--lowwidth{
-        width: 85%;
+@media(max-width: 370px){
+    .h2--advantages{
+        width: 100%;
     }
 }
-@media(max-width: 354px){
+@media(max-width: 320px){
     .advantages{
         &__underline {
             left: 4em;
