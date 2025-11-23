@@ -1209,6 +1209,10 @@ body.lock {
     grid-column: 1;
     grid-row: 4;
   }
+
+  .h2--advantages {
+    width: 85%;
+  }
 }
 @media (max-width: 385px) {
   .advantages__underline {
