@@ -1,18 +1,15 @@
 @import '../variables.scss';
+@import '../mixines.scss';
 .condition{
     padding: 100px 0 90px;
     background-color: $back-acc-col;
     text-align: center;
     &__arr{
-        display: flex;
-        justify-content: center;
+        @include flex(0,center);
         margin-bottom: 45px;
         &-h4{
-            font-size: 20px;
-            font-weight:400;
-            line-height: 1.4;
+            @include text(1.4, 0.2px, 20px, 400);
             margin:20px 0px 0px 120px;
-            letter-spacing: 0.2px;
         }
         &-img{
             margin: 50px 0 0 55px;
@@ -24,7 +21,6 @@
             flex-direction: column;
             overflow: hidden;
             position: relative;
-            
         }
         &-container{
             overflow: hidden;
@@ -70,8 +66,7 @@
                 border-radius: 40px;
                 padding: 13px 27px;
                 font-family: 'Montserrat';
-                font-weight: 600;
-                font-size: 20px;
+                @include text(0, 0, 20px, 600);
                 transition: 
                     transform 0.3s ease,
                     opacity 0.3s ease;
