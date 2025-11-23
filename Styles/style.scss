@@ -37,7 +37,6 @@ body{
     }
     &--left{
         text-align: left;
-        width: 80%;
     }
     &__steps{
         margin-bottom: 80px;
@@ -50,6 +49,9 @@ body{
     }
     &--tel{
         margin-bottom: 15px;
+    }
+    &--lowwidth{
+        width: 80%;
     }
 }
 .h3{
