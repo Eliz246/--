@@ -11,7 +11,7 @@
         gap: $gap;
     }
 }
-@mixin grid($col:0, $row:0, $col-gap:0,$rad:0,$gap:0){
+@mixin grid($col:0, $row:0, $col-gap:0,$row-gap:0,$gap:0){
     display: grid;
     @if $col != 0 {
         grid-template-columns: $col;
@@ -22,8 +22,25 @@
     @if $col-gap != 0 {
         column-gap: $col-gap;
     }
-    @if $rad != 0 {
-        row-gap: $rad;
+    @if $row-gap != 0 {
+        row-gap: $row-gap;
+    }
+    @if $gap != 0 {
+        gap: $gap;
+    }
+}
+@mixin Medgrid($col:0, $row:0, $col-gap:0,$row-gap:0,$gap:0){
+    @if $col != 0 {
+        grid-template-columns: $col;
+    }
+    @if $row != 0 {
+        grid-template-rows: $row;
+    }
+    @if $col-gap != 0 {
+        column-gap: $col-gap;
+    }
+    @if $row-gap != 0 {
+        row-gap: $row-gap;
     }
     @if $gap != 0 {
         gap: $gap;
@@ -49,22 +66,22 @@
         font-family: $fam;
     }
 }
-@mixin position($pos, $col: 0, $row: 0,$col-gap: 0,$rad: 0, $color:0) {
+@mixin position($pos, $top: 0, $bot: 0,$r: 0,$l: 0,$z:0) {
     position: $pos;
-    @if $col != 0 {
-        top: $col;
+    @if $top != 0 {
+        top: $top;
     }
-    @if $row != 0 {
-        bottom: $row;
+    @if $bot != 0 {
+        bottom: $bot;
     }
-    @if $col-gap != 0 {
-        right: $col-gap;
+    @if $r != 0 {
+        right: $r;
     }
-    @if $rad != 0 {
-        left: $rad;
+    @if $l != 0 {
+        left: $l;
     }
-    @if $color != 0 {
-        z-index: $color;
+    @if $z != 0 {
+        z-index: $z;
     }
 }
 @mixin bac-col-rad($bac-color,$rad:0, $color:0){

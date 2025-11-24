@@ -702,21 +702,20 @@ body.lock {
   }
   .header-menu {
     position: fixed;
-    top: 0;
     right: -100%;
-    height: 100vh;
+    z-index: 1200;
+    top: 0;
     width: 70%;
-    background: white;
+    height: 100vh;
+    background: #ffffff;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     box-shadow: 0 10px 12px rgba(0, 0, 0, 0.5);
     transition: right 0.5s ease;
-    z-index: 1200;
   }
   .header-menu__item {
-    padding-left: 50px;
-    padding-bottom: 15px;
+    padding: 0 0 15px 50px;
   }
   .header-menu__item:last-child {
     display: inline;
@@ -760,10 +759,10 @@ body.lock {
   }
 
   .footer-wrapper {
-    grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "socnet start end" "mail doc .";
+    grid-template-rows: repeat(2, auto);
     row-gap: 20px;
+    grid-template-areas: "socnet start end" "mail doc .";
   }
   .footer__socnet {
     grid-area: socnet;
@@ -805,7 +804,7 @@ body.lock {
   }
 
   .steps-wrapper {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 40px;
   }
@@ -859,8 +858,7 @@ body.lock {
     gap: 15px;
   }
   .advantages__box {
-    padding-right: 20px;
-    padding-left: 50px;
+    padding: 0 20px 0 50px;
   }
   .advantages__box-img {
     width: 130px;
@@ -932,8 +930,7 @@ body.lock {
     display: block;
   }
   .condition__arr-img {
-    margin-left: 0px;
-    margin-top: 25px;
+    margin: 25px 0 0 0;
     width: 35px;
     position: relative;
     left: 35%;
@@ -1052,10 +1049,10 @@ body.lock {
   }
 
   .footer-wrapper {
-    grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "socnet mail" "start end" "doc doc";
+    grid-template-rows: repeat(3, auto);
     row-gap: 15px;
+    grid-template-areas: "socnet mail" "start end" "doc doc";
   }
   .footer__socnet {
     grid-area: socnet;
