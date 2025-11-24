@@ -17,7 +17,7 @@
         }
     }
     &__min-text{
-        @include text(0,0,0,14px,$text-color);
+        @include text(0,0,14px,0,$text-color);
         margin:0px;
     }
     &__menu{
@@ -28,7 +28,7 @@
             font-weight: 600;
             margin-bottom: 27px;
             &-link{
-                @include text(0,0,0,18px,$accent);
+                @include text(0,0,18px,0,$accent);
                 text-decoration: none;
             }
         }

@@ -567,7 +567,7 @@ body.lock {
   margin-bottom: 35px;
 }
 .footer__min-text {
-  font-weight: 14px;
+  font-size: 14px;
   color: #4D4D52;
   margin: 0px;
 }
@@ -581,7 +581,7 @@ body.lock {
   margin-bottom: 27px;
 }
 .footer__menu-item-link {
-  font-weight: 18px;
+  font-size: 18px;
   color: #7872B9;
   text-decoration: none;
 }
