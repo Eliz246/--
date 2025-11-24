@@ -839,6 +839,9 @@ body.lock {
   .baner__h4 {
     padding: 0px;
   }
+  .baner__btn {
+    justify-self: center;
+  }
 
   .h2__baner {
     text-align: center;
