@@ -43,6 +43,8 @@
     border:2px solid $accent;
     @include bac-col-rad($back-color,15px);
     @include size(240px,50px);
+    @include flex(center,center);
+    text-decoration: none;
     justify-self: end;
     transition: background-color 0.2s ease;
     &:hover{

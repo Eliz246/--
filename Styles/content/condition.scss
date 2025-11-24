@@ -60,6 +60,7 @@
                 border: 2px solid $accent;
                 margin:10px 0px;
                 padding: 13px 27px;
+                text-decoration: none;
                 @include text(0, 0, 20px, 600,$accent,'Montserrat');
                 transition: 
                     transform 0.3s ease,
