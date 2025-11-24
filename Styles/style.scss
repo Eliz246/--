@@ -87,6 +87,7 @@ body{
     border-color: $accent;
     max-width: 420px;
     @include size(380px,70px);
+    @include flex(center,center);
     box-shadow: 10px 15px $light-accent;
     transition: box-shadow 0.2s ease;
     &:hover{

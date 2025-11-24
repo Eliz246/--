@@ -115,6 +115,9 @@ body.lock {
   max-width: 420px;
   width: 380px;
   height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-shadow: 10px 15px #EBF5FF;
   transition: box-shadow 0.2s ease;
 }
