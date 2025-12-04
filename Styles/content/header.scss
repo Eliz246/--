@@ -48,7 +48,7 @@
     justify-self: end;
     transition: background-color 0.2s ease;
     &:hover{
-        background-color: rgba($text-color, 0.25);
+        background-color: rgba($accent, 0.25);
     } 
     &:active{
         @include bac-col-rad($accent,0,$back-color);
