@@ -198,11 +198,11 @@
     }
 }
 @media(max-width:900px){
-    .advant{
+    .whywe__advant{
         &-wrapper{
             @include Medgrid(1fr,0,0,120px);
         }
-        &__item{
+        &-item{
             justify-self: center;
             &-box{
                 padding-top: 30px;
@@ -247,7 +247,7 @@
         }
     }
     .h2{
-        &__baner{
+        &--baner{
             text-align: center;
         }
         &--app{

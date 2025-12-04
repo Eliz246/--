@@ -32,7 +32,7 @@ body.lock {
   text-align: center;
   margin: 0px;
 }
-.h2__baner {
+.h2--baner {
   line-height: 1.4;
   letter-spacing: 0px;
   color: #4D4D52;
@@ -42,7 +42,7 @@ body.lock {
 .h2--left {
   text-align: left;
 }
-.h2__steps {
+.h2--steps {
   margin-bottom: 80px;
 }
 .h2--question-marg {
@@ -268,19 +268,18 @@ body.lock {
 .whywe__h2 {
   margin-bottom: 80px;
 }
-
-.advant-wrapper {
+.whywe__advant-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 20px;
 }
-.advant__item {
+.whywe__advant-item {
   display: flex;
   justify-content: center;
   position: relative;
   max-width: 380px;
 }
-.advant__item-box {
+.whywe__advant-item-box {
   position: relative;
   top: 120px;
   background-color: #EBF5FF;
@@ -289,20 +288,20 @@ body.lock {
   text-align: center;
   align-self: start;
 }
-.advant__item-box-h4 {
+.whywe__advant-item-box-h4 {
   letter-spacing: 0.7px;
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 15px;
 }
-.advant__item-box-text {
+.whywe__advant-item-box-text {
   font-size: 18px;
   font-weight: 400;
 }
-.advant__item-box--othpad {
+.whywe__advant-item-box--othpad {
   padding: 90px 60px 30px;
 }
-.advant__item-img {
+.whywe__advant-item-img {
   position: absolute;
   z-index: 2;
   width: 220px;
@@ -795,20 +794,20 @@ body.lock {
   }
 }
 @media (max-width: 900px) {
-  .advant-wrapper {
+  .whywe__advant-wrapper {
     grid-template-columns: 1fr;
     row-gap: 120px;
   }
-  .advant__item {
+  .whywe__advant-item {
     justify-self: center;
   }
-  .advant__item-box {
+  .whywe__advant-item-box {
     padding-top: 30px;
   }
-  .advant__item-box--othpad {
+  .whywe__advant-item-box--othpad {
     padding-top: 30px;
   }
-  .advant__item-img {
+  .whywe__advant-item-img {
     width: 160px;
   }
 
@@ -843,7 +842,7 @@ body.lock {
     justify-self: center;
   }
 
-  .h2__baner {
+  .h2--baner {
     text-align: center;
   }
   .h2--app {
