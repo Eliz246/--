@@ -832,14 +832,17 @@ body.lock {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .baner__img {
+    display: grid;
+    justify-items: right;
+  }
   .baner-info {
     text-align: center;
+    display: grid;
+    justify-items: center;
   }
   .baner__h4 {
     padding: 0px;
-  }
-  .baner__btn {
-    justify-self: center;
   }
 
   .h2--baner {

@@ -236,14 +236,17 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+        &__img{
+            display: grid;
+            justify-items: right;
+        }
         &-info{
             text-align: center;
+            display: grid;
+            justify-items: center;
         }
         &__h4{
             padding: 0px;
-        }
-        &__btn{
-            justify-self: center;
         }
     }
     .h2{
