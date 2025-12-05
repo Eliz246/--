@@ -217,7 +217,7 @@ body.lock {
   transition: background-color 0.2s ease;
 }
 .btn-invers:hover {
-  background-color: rgba(77, 77, 82, 0.25);
+  background-color: rgba(120, 114, 185, 0.25);
 }
 .btn-invers:active {
   background-color: #7872B9;
