@@ -16,7 +16,7 @@
             }
         }
     }
-    &--btn-center{
+    &-btn{
         @include flex(center,center);
     }
     &__img{

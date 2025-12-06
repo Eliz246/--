@@ -524,7 +524,7 @@ body.lock {
 .app__info-box-img {
   margin-right: 30px;
 }
-.app--btn-center {
+.app-btn {
   display: flex;
   align-items: center;
   justify-content: center;
