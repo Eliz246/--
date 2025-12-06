@@ -16,6 +16,9 @@
             }
         }
     }
+    &--btn-center{
+        @include flex(center,center);
+    }
     &__img{
         @include position(relative,0,15px);
     }

@@ -121,6 +121,11 @@ body.lock {
   text-decoration: none;
   box-shadow: 10px 15px #EBF5FF;
   transition: box-shadow 0.2s ease;
+  /* &--center{
+       @include flex(center,center);
+       justify-self: center;
+   }
+   */
 }
 .btn:hover {
   box-shadow: 5px 5px #EBF5FF;
@@ -131,11 +136,6 @@ body.lock {
 .btn--steps-box {
   justify-self: end;
   width: 410px;
-}
-.btn--center {
-  /*@include flex(center,center);*/
-  display: grid;
-  justify-self: center;
 }
 
 @keyframes scroll-left {
@@ -238,12 +238,16 @@ body.lock {
   display: flex;
   justify-content: space-between;
 }
+.baner__img {
+  display: grid;
+  justify-items: right;
+  /*&-chat{
+      display: flex;
+      justify-self: end;
+  }*/
+}
 .baner__img-hag {
   margin-bottom: 15px;
-}
-.baner__img-chat {
-  display: flex;
-  justify-self: end;
 }
 .baner__h1 {
   letter-spacing: 1px;
@@ -519,6 +523,11 @@ body.lock {
 }
 .app__info-box-img {
   margin-right: 30px;
+}
+.app--btn-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .app__img {
   position: relative;
