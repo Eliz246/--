@@ -121,11 +121,6 @@ body.lock {
   text-decoration: none;
   box-shadow: 10px 15px #EBF5FF;
   transition: box-shadow 0.2s ease;
-  /* &--center{
-       @include flex(center,center);
-       justify-self: center;
-   }
-   */
 }
 .btn:hover {
   box-shadow: 5px 5px #EBF5FF;
@@ -241,10 +236,6 @@ body.lock {
 .baner__img {
   display: grid;
   justify-items: right;
-  /*&-chat{
-      display: flex;
-      justify-self: end;
-  }*/
 }
 .baner__img-hag {
   margin-bottom: 15px;
