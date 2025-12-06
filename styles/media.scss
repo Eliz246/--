@@ -263,9 +263,8 @@
             justify-content: center;
         }
         &__info{
-            &-box{
-                justify-self: center;
-            }
+            display: grid;
+            justify-items: center;
         }
         &__img {
             position:static;

@@ -855,8 +855,9 @@ body.lock {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .app__info-box {
-    justify-self: center;
+  .app__info {
+    display: grid;
+    justify-items: center;
   }
   .app__img {
     position: static;
