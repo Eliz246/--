@@ -11,10 +11,6 @@
         &-hag{
             margin-bottom: 15px;
         }
-        /*&-chat{
-            display: flex;
-            justify-self: end;
-        }*/
     }
     &__h1{
         @include text(0, 1px, 44px, 800, $accent);
