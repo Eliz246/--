@@ -1,0 +1,13 @@
+@import '../variables.scss';
+@import '../mixines.scss';
+.error{
+    padding:0 0 50px;
+    &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        @include text(1.4, 0.3px, 32px, 600);
+    }
+}
