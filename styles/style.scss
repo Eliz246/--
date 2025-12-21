@@ -52,9 +52,6 @@ body{
     &--marg-b10{
         margin-bottom: 10px;
     }
-    &--marg-b15{
-        margin-bottom: 15px;
-    }
 }
 .h4{
     @include text(1.4, 0.2px, 20px);

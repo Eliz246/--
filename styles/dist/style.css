@@ -68,9 +68,6 @@ body.lock {
 .h3--marg-b10 {
   margin-bottom: 10px;
 }
-.h3--marg-b15 {
-  margin-bottom: 15px;
-}
 
 .h4 {
   line-height: 1.4;
@@ -556,8 +553,6 @@ body.lock {
   color: #4D4D52;
   text-decoration: none;
   margin: 0px;
-}
-.telephone__link--marg-b15 {
   margin-bottom: 15px;
 }
 .telephone__link:hover {
@@ -575,6 +570,13 @@ body.lock {
 }
 .footer__socnet-link-item {
   margin-right: 25px;
+}
+.footer__socnet-img {
+  transition: all 0.1s;
+}
+.footer__socnet-img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
 }
 .footer__socnet-logo {
   margin-bottom: 35px;
