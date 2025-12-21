@@ -632,8 +632,9 @@ body.lock {
 .error__title {
   line-height: 1.4;
   letter-spacing: 0.3px;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 600;
+  margin-bottom: 45px;
 }
 
 @media (max-width: 1180px) {
@@ -1269,5 +1270,20 @@ body.lock {
 @media (max-width: 320px) {
   .advantages__underline {
     left: 4em;
+  }
+}
+@media (max-width: 610px) {
+  .error__title {
+    font-size: 20px;
+  }
+  .error__img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .error__title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 25px;
   }
 }

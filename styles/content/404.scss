@@ -8,6 +8,7 @@
         align-items: center;
     }
     &__title{
-        @include text(1.4, 0.3px, 32px, 600);
+        @include text(1.4, 0.3px, 24px, 600);
+        margin-bottom: 45px;
     }
 }
