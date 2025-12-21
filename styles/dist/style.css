@@ -548,6 +548,21 @@ body.lock {
   grid-template-columns: repeat(2, 1fr);
   column-gap: 50px;
 }
+.telephone__link {
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #4D4D52;
+  text-decoration: none;
+  margin: 0px;
+}
+.telephone__link--marg-b15 {
+  margin-bottom: 15px;
+}
+.telephone__link:hover {
+  color: #7872B9;
+}
 
 .footer {
   padding: 55px 0;
