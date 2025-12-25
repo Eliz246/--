@@ -75,6 +75,13 @@
             width: 300px;
             left: 28.5em;
         }
+        &__box{
+            &-wthimg{
+                &-two{
+                    padding-right: 50px;
+                }
+            }
+        }
     }
     .steps{
         &-wrapper{
@@ -98,9 +105,7 @@
             gap:0;
         }
     }
-}
-@media (max-width:1000px){
-    .btn-invers{
+     .btn-invers{
         display: none;
     }
     .header{
@@ -131,15 +136,6 @@
         justify-self: end;
         cursor: pointer;
         z-index: 1300;
-    }
-    .advantages{
-        &__box{
-            &-wthimg{
-                &-two{
-                    padding-right: 50px;
-                }
-            }
-        }
     }
 }
 @media(max-width:927px){
@@ -536,6 +532,9 @@
 @media(max-width:565px){
     .advantages__underline{
         left: 0em;
+    }
+    .telephone__img{
+        width: 150px;
     }
 }
 @media(max-width:500px){

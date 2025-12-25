@@ -712,6 +712,9 @@ body.lock {
     width: 300px;
     left: 28.5em;
   }
+  .advantages__box-wthimg-two {
+    padding-right: 50px;
+  }
 
   .steps-wrapper {
     gap: 80px;
@@ -731,8 +734,7 @@ body.lock {
   .app-wrapper {
     gap: 0;
   }
-}
-@media (max-width: 1000px) {
+
   .btn-invers {
     display: none;
   }
@@ -767,10 +769,6 @@ body.lock {
     justify-self: end;
     cursor: pointer;
     z-index: 1300;
-  }
-
-  .advantages__box-wthimg-two {
-    padding-right: 50px;
   }
 }
 @media (max-width: 927px) {
@@ -1140,6 +1138,10 @@ body.lock {
 @media (max-width: 565px) {
   .advantages__underline {
     left: 0em;
+  }
+
+  .telephone__img {
+    width: 150px;
   }
 }
 @media (max-width: 500px) {
