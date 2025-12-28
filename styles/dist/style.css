@@ -52,7 +52,7 @@ body.lock {
   margin-bottom: 35px;
 }
 .h2--tel {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .h2--advantages {
   width: 80%;
@@ -67,6 +67,9 @@ body.lock {
 }
 .h3--marg-b10 {
   margin-bottom: 10px;
+}
+.h3--marg-b15 {
+  margin-bottom: 15px;
 }
 
 .h4 {
@@ -552,8 +555,6 @@ body.lock {
   font-weight: 600;
   color: #4D4D52;
   text-decoration: none;
-  margin: 0px;
-  margin-bottom: 15px;
 }
 .telephone__link:hover {
   color: #7872B9;

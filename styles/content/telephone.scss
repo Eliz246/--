@@ -19,8 +19,6 @@
     &__link{
         @include text(1.4, 0.3px, 24px, 600, $text-color);
         text-decoration: none;
-        margin: 0px;
-        margin-bottom: 15px;
         &:hover{
             color: $accent;
         }
